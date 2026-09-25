@@ -1,5 +1,10 @@
 # NOIR & BLADE — Modern Grooming
 
+
+https://github.com/user-attachments/assets/613b838c-437e-43d4-8ca1-9a1d0ddd32f1
+
+
+
 A modern, responsive barbershop booking website built as a  practical assessment.
 
 **Live Website:** https://eftech05.github.io/noir-blade-barbershop/
