@@ -377,15 +377,35 @@ function Footer() {
             gap: isMobile ? "12px" : "20px",
           }}
         >
-          <p
-            style={{
-              margin: 0,
-              color: "#777",
-              fontSize: isMobile ? "12px" : "13px",
-            }}
-          >
-            © {new Date().getFullYear()} NOIR & BLADE. All rights reserved.
-          </p>
+          <div>
+            <p
+              style={{
+                margin: "0 0 6px",
+                color: "#777",
+                fontSize: isMobile ? "12px" : "13px",
+              }}
+            >
+              © {new Date().getFullYear()} NOIR & BLADE. All rights reserved.
+            </p>
+
+            <p
+              style={{
+                margin: 0,
+                color: "#777",
+                fontSize: isMobile ? "12px" : "13px",
+              }}
+            >
+              Developed by{" "}
+              <span
+                style={{
+                  color: "#b99b5f",
+                  fontWeight: "600",
+                }}
+              >
+                Franklin Ngangu
+              </span>
+            </p>
+          </div>
 
           <Link
             to="/terms"
