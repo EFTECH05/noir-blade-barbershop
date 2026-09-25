@@ -18,6 +18,13 @@ function Footer() {
     };
   }, []);
 
+  const socialLinkStyle = {
+    color: "#999",
+    textDecoration: "none",
+    fontSize: isMobile ? "13px" : "14px",
+    transition: "color 0.2s ease",
+  };
+
   return (
     <footer
       style={{
@@ -80,6 +87,7 @@ function Footer() {
           NOIR & BLADE take care of the rest.
         </p>
 
+        {/* THIS TAKES THE CUSTOMER TO THE BOOKING PAGE */}
         <Link
           to="/booking"
           style={{
@@ -185,58 +193,23 @@ function Footer() {
                 gap: "12px",
               }}
             >
-              <Link
-                to="/"
-                style={{
-                  color: "#999",
-                  textDecoration: "none",
-                  fontSize: isMobile ? "13px" : "14px",
-                }}
-              >
+              <Link to="/" style={socialLinkStyle}>
                 Home
               </Link>
 
-              <Link
-                to="/services"
-                style={{
-                  color: "#999",
-                  textDecoration: "none",
-                  fontSize: isMobile ? "13px" : "14px",
-                }}
-              >
+              <Link to="/services" style={socialLinkStyle}>
                 Services
               </Link>
 
-              <Link
-                to="/about"
-                style={{
-                  color: "#999",
-                  textDecoration: "none",
-                  fontSize: isMobile ? "13px" : "14px",
-                }}
-              >
+              <Link to="/about" style={socialLinkStyle}>
                 About
               </Link>
 
-              <Link
-                to="/contact"
-                style={{
-                  color: "#999",
-                  textDecoration: "none",
-                  fontSize: isMobile ? "13px" : "14px",
-                }}
-              >
+              <Link to="/contact" style={socialLinkStyle}>
                 Contact
               </Link>
 
-              <Link
-                to="/booking"
-                style={{
-                  color: "#999",
-                  textDecoration: "none",
-                  fontSize: isMobile ? "13px" : "14px",
-                }}
-              >
+              <Link to="/booking" style={socialLinkStyle}>
                 Book Now
               </Link>
             </div>
@@ -268,7 +241,16 @@ function Footer() {
             >
               <strong style={{ color: "#ddd" }}>Phone</strong>
               <br />
-              +27 21 555 0198
+
+              <a
+                href="tel:+27215550198"
+                style={{
+                  color: "#999",
+                  textDecoration: "none",
+                }}
+              >
+                +27 21 555 0198
+              </a>
             </p>
 
             <p
@@ -281,7 +263,17 @@ function Footer() {
             >
               <strong style={{ color: "#ddd" }}>Email</strong>
               <br />
-              hello@noirandblade.co.za
+
+              <a
+                href="mailto:hello@noirandblade.co.za"
+                style={{
+                  color: "#999",
+                  textDecoration: "none",
+                  wordBreak: "break-word",
+                }}
+              >
+                hello@noirandblade.co.za
+              </a>
             </p>
 
             <p
@@ -352,6 +344,63 @@ function Footer() {
               <br />
               Closed
             </p>
+          </div>
+
+          {/* =================================================
+              SOCIAL LINKS
+          ================================================= */}
+
+          <div
+            style={{
+              minWidth: 0,
+              gridColumn: isTablet ? "1 / -1" : "auto",
+            }}
+          >
+            <h3
+              style={{
+                margin: "0 0 16px",
+                fontSize: "15px",
+                color: "#fff",
+                fontWeight: "600",
+              }}
+            >
+              Follow Us
+            </h3>
+
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "12px",
+              }}
+            >
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={socialLinkStyle}
+              >
+                Instagram
+              </a>
+
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={socialLinkStyle}
+              >
+                Facebook
+              </a>
+
+              <a
+                href="https://www.tiktok.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={socialLinkStyle}
+              >
+                TikTok
+              </a>
+            </div>
           </div>
         </div>
       </section>
